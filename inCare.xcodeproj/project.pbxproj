@@ -7,20 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4909480F2364F2730078571B /* WearablesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4909480E2364F2730078571B /* WearablesCollectionViewController.swift */; };
+		490948182364FA740078571B /* VestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490948162364FA740078571B /* VestCollectionViewCell.swift */; };
+		490948192364FA740078571B /* VestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 490948172364FA740078571B /* VestCollectionViewCell.xib */; };
+		4909481C236504830078571B /* WearableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4909481A236504830078571B /* WearableCollectionViewCell.swift */; };
+		4909481D236504830078571B /* WearableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4909481B236504830078571B /* WearableCollectionViewCell.xib */; };
 		4954D50422EE86D000214075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954D50322EE86D000214075 /* AppDelegate.swift */; };
 		4954D50922EE86D000214075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4954D50722EE86D000214075 /* Main.storyboard */; };
 		4954D50B22EE86D100214075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4954D50A22EE86D100214075 /* Assets.xcassets */; };
 		4954D50E22EE86D100214075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4954D50C22EE86D100214075 /* LaunchScreen.storyboard */; };
+		4962F574235CFEF60098E2F8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962F573235CFEF60098E2F8 /* Constant.swift */; };
 		49F266C32305F219003A3390 /* BrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F266C22305F219003A3390 /* BrainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4909480E2364F2730078571B /* WearablesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WearablesCollectionViewController.swift; sourceTree = "<group>"; };
+		490948162364FA740078571B /* VestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VestCollectionViewCell.swift; sourceTree = "<group>"; };
+		490948172364FA740078571B /* VestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VestCollectionViewCell.xib; sourceTree = "<group>"; };
+		4909481A236504830078571B /* WearableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WearableCollectionViewCell.swift; sourceTree = "<group>"; };
+		4909481B236504830078571B /* WearableCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WearableCollectionViewCell.xib; sourceTree = "<group>"; };
 		4954D50022EE86D000214075 /* inCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4954D50322EE86D000214075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4954D50822EE86D000214075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4954D50A22EE86D100214075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4954D50D22EE86D100214075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4954D50F22EE86D100214075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4962F573235CFEF60098E2F8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		49F266C22305F219003A3390 /* BrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4909481E236504930078571B /* Wearables Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				4909480E2364F2730078571B /* WearablesCollectionViewController.swift */,
+				4909481B236504830078571B /* WearableCollectionViewCell.xib */,
+				4909481A236504830078571B /* WearableCollectionViewCell.swift */,
+				4909481F2365049E0078571B /* Vest */,
+			);
+			path = "Wearables Collection View";
+			sourceTree = "<group>";
+		};
+		4909481F2365049E0078571B /* Vest */ = {
+			isa = PBXGroup;
+			children = (
+				490948172364FA740078571B /* VestCollectionViewCell.xib */,
+				490948162364FA740078571B /* VestCollectionViewCell.swift */,
+			);
+			path = Vest;
+			sourceTree = "<group>";
+		};
 		4954D4F722EE86D000214075 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +86,14 @@
 		4954D50222EE86D000214075 /* inCare */ = {
 			isa = PBXGroup;
 			children = (
-				4954D50322EE86D000214075 /* AppDelegate.swift */,
+				4954D50C22EE86D100214075 /* LaunchScreen.storyboard */,
 				4954D50722EE86D000214075 /* Main.storyboard */,
+				4954D50322EE86D000214075 /* AppDelegate.swift */,
+				4909481E236504930078571B /* Wearables Collection View */,
 				49F266C22305F219003A3390 /* BrainViewController.swift */,
 				4954D50A22EE86D100214075 /* Assets.xcassets */,
-				4954D50C22EE86D100214075 /* LaunchScreen.storyboard */,
 				4954D50F22EE86D100214075 /* Info.plist */,
+				4962F573235CFEF60098E2F8 /* Constant.swift */,
 			);
 			path = inCare;
 			sourceTree = "<group>";
@@ -122,6 +156,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490948192364FA740078571B /* VestCollectionViewCell.xib in Resources */,
+				4909481D236504830078571B /* WearableCollectionViewCell.xib in Resources */,
 				4954D50E22EE86D100214075 /* LaunchScreen.storyboard in Resources */,
 				4954D50B22EE86D100214075 /* Assets.xcassets in Resources */,
 				4954D50922EE86D000214075 /* Main.storyboard in Resources */,
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490948182364FA740078571B /* VestCollectionViewCell.swift in Sources */,
+				4909480F2364F2730078571B /* WearablesCollectionViewController.swift in Sources */,
+				4909481C236504830078571B /* WearableCollectionViewCell.swift in Sources */,
 				49F266C32305F219003A3390 /* BrainViewController.swift in Sources */,
 				4954D50422EE86D000214075 /* AppDelegate.swift in Sources */,
+				4962F574235CFEF60098E2F8 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43B5CQKAZ4;
 				INFOPLIST_FILE = inCare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43B5CQKAZ4;
 				INFOPLIST_FILE = inCare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

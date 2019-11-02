@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VestCollectionViewCell" id="gTV-IL-0wX" customClass="VestCollectionViewCell" customModule="inCare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="700"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="700"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vGz-W7-Ao6">
+                        <rect key="frame" x="75" y="225" width="250" height="250"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="off circle" translatesAutoresizingMaskIntoConstraints="NO" id="vJM-Hg-2EE">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vest" translatesAutoresizingMaskIntoConstraints="NO" id="uC2-PP-x7X">
+                                <rect key="frame" x="50" y="50" width="150" height="150"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ni0-Mn-s8g">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                <connections>
+                                    <action selector="didTapVestButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="wsB-pN-YkY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="vJM-Hg-2EE" firstAttribute="top" secondItem="vGz-W7-Ao6" secondAttribute="top" id="4Sv-tA-gbs"/>
+                            <constraint firstAttribute="bottom" secondItem="ni0-Mn-s8g" secondAttribute="bottom" id="C6y-cY-RM3"/>
+                            <constraint firstAttribute="height" constant="250" id="OD1-oh-G2U"/>
+                            <constraint firstItem="ni0-Mn-s8g" firstAttribute="top" secondItem="vGz-W7-Ao6" secondAttribute="top" id="PFU-Xj-Oib"/>
+                            <constraint firstAttribute="trailing" secondItem="vJM-Hg-2EE" secondAttribute="trailing" id="QfS-4J-E7n"/>
+                            <constraint firstAttribute="trailing" secondItem="ni0-Mn-s8g" secondAttribute="trailing" id="WMJ-iZ-EC7"/>
+                            <constraint firstAttribute="width" secondItem="vGz-W7-Ao6" secondAttribute="height" multiplier="1:1" id="aeV-Ts-z9H"/>
+                            <constraint firstItem="uC2-PP-x7X" firstAttribute="top" secondItem="vGz-W7-Ao6" secondAttribute="top" constant="50" id="cJB-Fa-Z9Q"/>
+                            <constraint firstAttribute="trailing" secondItem="uC2-PP-x7X" secondAttribute="trailing" constant="50" id="dmO-mX-gN8"/>
+                            <constraint firstAttribute="bottom" secondItem="vJM-Hg-2EE" secondAttribute="bottom" id="lIy-yn-mMm"/>
+                            <constraint firstItem="ni0-Mn-s8g" firstAttribute="leading" secondItem="vGz-W7-Ao6" secondAttribute="leading" id="qIm-hP-YPx"/>
+                            <constraint firstItem="vJM-Hg-2EE" firstAttribute="leading" secondItem="vGz-W7-Ao6" secondAttribute="leading" id="qPM-fS-s4Z"/>
+                            <constraint firstAttribute="width" constant="250" id="uqM-c2-tBL"/>
+                            <constraint firstItem="uC2-PP-x7X" firstAttribute="leading" secondItem="vGz-W7-Ao6" secondAttribute="leading" constant="50" id="vAV-yT-wqq"/>
+                            <constraint firstAttribute="bottom" secondItem="uC2-PP-x7X" secondAttribute="bottom" constant="50" id="wCs-dv-mgg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7GH-gU-cWS"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="vGz-W7-Ao6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="7fZ-au-yDx"/>
+                <constraint firstItem="vGz-W7-Ao6" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Wgu-Mg-0lC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="400" height="700"/>
+            <connections>
+                <outlet property="circleImageView" destination="vJM-Hg-2EE" id="ND6-J5-mrh"/>
+            </connections>
+            <point key="canvasLocation" x="197.10144927536234" y="336.83035714285711"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="off circle" width="2551" height="2551"/>
+        <image name="vest" width="512" height="512"/>
+    </resources>
+</document>
